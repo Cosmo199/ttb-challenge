@@ -9,7 +9,7 @@ pipeline {
     stage('Checkout') {
       steps {
         echo 'Checkout source code'
-        git url: 'https://your-repo-url.git', branch: 'main'
+        git url: 'https://repo-url.git', branch: 'main'
       }
     }
 
