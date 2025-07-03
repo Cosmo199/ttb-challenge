@@ -1,0 +1,42 @@
+pipeline {
+  agent any
+
+  environment {
+    CYPRESS_CACHE_FOLDER = "${WORKSPACE}/.cache/Cypress"
+  }
+
+  stages {
+    stage('Checkout') {
+      steps {
+        echo 'Checkout source code'
+        git url: 'https://your-repo-url.git', branch: 'main'
+      }
+    }
+
+    stage('Install Dependencies') {
+      steps {
+        echo 'Installing Node modules'
+        sh 'npm ci'
+      }
+    }
+
+    stage('Run Cypress Tests') {
+      steps {
+        echo 'Running Cypress tests'
+        sh 'npx cypress run'
+      }
+    }
+  }
+
+  post {
+    always {
+      echo 'Archive test results (if any)'
+    }
+    success {
+      echo 'Test passed!'
+    }
+    failure {
+      echo 'Test failed!'
+    }
+  }
+}
