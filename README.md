@@ -1,32 +1,34 @@
 # ttb-challenge
 ็Greetings, my name is Nawakarn Ninprawut. It's a pleasure to meet you. I have completed the assignment and arranged the test cases in this repository in the order specified by the requirements.🙏🏻
 
-🌈 Test Automation assignment
+🌈 Test Automation assignment<br>
 
 1.Check duplicate items from list A and list B and append to a new list. Using your
-preferred programming language.
-📌 Folder Name : 1 and 2 create test script by cypress
+preferred programming language.<br>
+📌 Folder Name : 1 and 2 create test script by cypress<br>
+
 
 2.Create automation script to test website ‘http://the-internet.herokuapp.com/login’
 following test cases in table below. You can use your preferred programming
-language.
-📌 Folder Name : 
+language.<br>
+📌 Folder Name : 1 and 2 create test script by cypress<br>
+
 
 3.Create automation script using your preferred programming language for test Rest
-API GET request.
-📌 Folder Name : 3.Create automation script API Test
+API GET request.<br>
+📌 Folder Name : 3.Create automation script API Test<br>
 
 
 4.Design test coverage and create automated test scripts. Project manager assigns you
-to test mobile application. You can download source code 
-📌 Folder Name : 4.Design test coverage and create automated test scripts mobile app.
+to test mobile application. You can download source code <br>
+📌 Folder Name : 4.Design test coverage and create automated test scripts mobile app.<br>
 
 
-5.Please create jenkins pipeline for executing automated script.
-📌 Folder Name : 5.Jenkins Pipeline
+5.Please create jenkins pipeline for executing automated script.<br>
+📌 Folder Name : 5.Jenkins Pipeline <br>
 
 
 6.A simple cipher is built on the alphabet wheel which has uppercase English letters
-['A'-'Z'] written on It:
-📌 Folder Name : 
+['A'-'Z'] written on It:<br>
+📌 Folder Name : <br>
 
