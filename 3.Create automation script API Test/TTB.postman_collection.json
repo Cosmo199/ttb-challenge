@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "1605c488-b047-43fd-9223-cf40d3370667",
+		"name": "TTB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42452854"
+	},
+	"item": [
+		{
+			"name": "Get user profile success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Check the system response status is 200.",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Get response body.",
+							"const jsonData = pm.response.json();",
+							"",
+							"// Check output in object.",
+							"pm.test(\"Check response body fields\", function () {",
+							"    pm.expect(jsonData.data.id).to.eql(12);",
+							"    pm.expect(jsonData.data.email).to.eql(\"rachel.howell@reqres.in\");",
+							"    pm.expect(jsonData.data.first_name).to.eql(\"Rachel\");",
+							"    pm.expect(jsonData.data.last_name).to.eql(\"Howell\");",
+							"    pm.expect(jsonData.data.avatar).to.eql(\"https://reqres.in/img/faces/12-image.jpg\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ID",
+						"value": "12",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Email",
+						"value": "rachel.howell@reqres.in",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "FirstName",
+						"value": "Rachel",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "LastName",
+						"value": "Howell",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-api-key",
+						"value": "reqres-free-v1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/users/12",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user profile but user not found",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Check the system response status is 404.",
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							"",
+							"// Check output in object.",
+							"pm.test(\"Check response body fields\", function () {",
+							"    const jsonData = pm.response.json();",
+							"    pm.expect(Object.keys(jsonData).length).to.eql(0);",
+							"    pm.expect(jsonData).to.eql({});",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "reqres-free-v1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://reqres.in/api/users/1234",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
