@@ -31,5 +31,6 @@ to test mobile application. You can download source code <br>
 
 6.A simple cipher is built on the alphabet wheel which has uppercase English letters
 ['A'-'Z'] written on It:<br>
-📌 Folder Name : <br>
+📌 I have tried working on this problem, but I still don't quite understand the logic of the encryptedText function, so I haven't submitted my answer yet. 🥲
+<br>
 
