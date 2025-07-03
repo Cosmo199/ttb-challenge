@@ -22,6 +22,7 @@ API GET request.<br>
 4.Design test coverage and create automated test scripts. Project manager assigns you
 to test mobile application. You can download source code <br>
 📌 Folder Name : 4.Design test coverage and create automated test scripts mobile app.<br>
+📌 Test Case :https://docs.google.com/spreadsheets/d/1wqc8wW8ycgxvR65aJSQA3NR8W7YbyOIQtSqRNGnteBI/edit?usp=sharing
 
 
 5.Please create jenkins pipeline for executing automated script.<br>
