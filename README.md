@@ -1,7 +1,7 @@
 # ttb-challenge
 Hi, my name is Nawakarn Ninprawut. It's a pleasure to meet you. I have completed the assignment and arranged the test cases in this repository in the order specified by the requirements.🙏🏻
 
-🌈 Test Automation assignment<br>
+🌈 Test Automation Assignment<br>
 
 1.Check duplicate items from list A and list B and append to a new list. Using your
 preferred programming language.<br>
@@ -21,7 +21,7 @@ API GET request.<br>
 
 4.Design test coverage and create automated test scripts. Project manager assigns you
 to test mobile application. You can download source code <br>
-📌 Folder Name : 4.Design test coverage and create automated test scripts mobile app.<br>
+📌 Folder Name : 4.Design test coverage.<br>
 📌 Test Case :https://docs.google.com/spreadsheets/d/1wqc8wW8ycgxvR65aJSQA3NR8W7YbyOIQtSqRNGnteBI/edit?usp=sharing
 
 

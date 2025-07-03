@@ -17,6 +17,7 @@ ${TEXT_VIEW_XPATH}               //xpath  ช่องกรอก Title To-DO
 ${NOTIFICATION_VIEW_XPATH}       //xpath  Icon notification
 ${DATE_SPINNER_ITEMSTYLE}        //xpath  Icon เลือกเวลา
 ${SAVE_TODO_DATE_BUTTON_XPATH}   //xpath  ปุ่มบันทึกวัน/เดือน/ปีรายการ TO-DO
+${NOTIFICATION_TOGLE_BUTTON_XPATH}   //xpath  ปุ่ม Notification Togle
 
 
 
@@ -63,16 +64,47 @@ TC-03 Set Notification
     Close Application
 
 TC-04 Set Recurring Notification
-
+    Open Application                    ${APPIUM_SERVER}    &{ANDROID_CAPABILITIES}
+    Wait Until Element Is Visible       ${MAIN_ACTIVITY_XPATH}    10s
+    Click Element                       ${LIST_TODO_INSTANCE_XPATH}
+    Sleep                               300s
+    Wait Until Element Is Visible       ${TODO_ABOUT_INSTANCE_XPATH}    10s
+    Click Element                       ${NOTIFICATION_VIEW_XPATH}      10s
+    Click Element                       ${DATE_SPINNER_ITEMSTYLE}   ${DATE_TODO}  
+    Sleep                               300s
+    Click Element                       ${SAVE_TODO_DATE_BUTTON_XPATH}
+    Log To Console                      The system shows it as recurring and alerts daily as scheduled.
+    Close Application
 
 
 TC-05 Disable Notification
+    Open Application                    ${APPIUM_SERVER}    &{ANDROID_CAPABILITIES}
+    Wait Until Element Is Visible       ${MAIN_ACTIVITY_XPATH}    10s
+    Click Element                       ${LIST_TODO_INSTANCE_XPATH}
+    Sleep                               300s
+    Wait Until Element Is Visible       ${TODO_ABOUT_INSTANCE_XPATH}    10s
+    Click Element                       ${NOTIFICATION_VIEW_XPATH}      10s
+    Click Element                       ${DATE_SPINNER_ITEMSTYLE}   ${DATE_TODO}  
+    Sleep                               300s
+    Click Element                       ${SAVE_TODO_DATE_BUTTON_XPATH}
+    Log To Console                      No notification is triggered for that item
+    Close Application
 
 TC-06 Delete To-Do with Alert
 
 TC-07 Bulk Delete Notifications
 
 TC-08 Notification Trigger
+    Open Application                    ${APPIUM_SERVER}    &{ANDROID_CAPABILITIES}
+    Wait Until Element Is Visible       ${MAIN_ACTIVITY_XPATH}    10s
+    Click Element                       ${LIST_TODO_INSTANCE_XPATH}
+    Sleep                               300s
+    Wait Until Element Is Visible       ${TODO_ABOUT_INSTANCE_XPATH}    10s
+    Click Element                       ${NOTIFICATION_VIEW_XPATH}      10s
+    Click Element                       ${DATE_SPINNER_ITEMSTYLE}   ${DATE_TODO}  
+    Sleep                               300s
+    Click Element                       ${NOTIFICATION_TOGLE_BUTTON_XPATH}
+    Log To Console                      A push or local notification is received.
 
 TC-09 Background Notification
 
