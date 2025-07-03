@@ -1,5 +1,7 @@
 # tester-challenge
 Hi, my name is Nawakarn Ninprawut. It's a pleasure to meet you. I have completed the assignment and arranged the test cases in this repository in the order specified by the requirements.🙏🏻
+CV: https://fasttutor.online/cosmo/nawakarn.php
+
 
 🌈 Test Automation Assignment<br>
 
