@@ -34,6 +34,7 @@ to test mobile application. You can download source code <br>
 📌 I have tried working on this problem, but I still don't quite understand the logic of the encryptedText function, so I haven't submitted my answer yet. 🥲
 <br><br><br><br>
 
-Basic Software Testing and Test Case Design
+Basic Software Testing and Test Case Design<br>
+Quiz 1 , Quiz 2 <br>
 https://docs.google.com/spreadsheets/d/1pDSp4URuM--2QZXbbASEq1YyHXPc4yolr-6YJ_PQHfw/edit?usp=sharing
 
